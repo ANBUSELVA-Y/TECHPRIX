@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHPRIX — Student Tech Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo-icon.png" alt="TECHPRIX Icon" class="nav-logo-icon" />
+        <img src="assets/logo-name.png" alt="TECHPRIX" class="nav-logo-name" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#internships" class="nav-link">Internships</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Get Started</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-brand-logo">
+        <img src="assets/logo-icon.png" alt="TECHPRIX Logo" class="hero-logo-icon" />
+        <img src="assets/logo-name.png" alt="TECHPRIX" class="hero-logo-name" />
+      </div>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Empowering College Students Across India
+      </div>
+      <h1 class="hero-title">
+        Build Your Future<br/>
+        <span class="gradient-text">With Expert Tech Support</span>
+      </h1>
+      <p class="hero-subtitle">
+        From final-year projects to internship guidance — TECHPRIX is your all-in-one 
+        tech partner designed exclusively for engineering and college students.
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-primary">
+          Explore Services
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Request a Project</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="200">0</span><span>+</span>
+          <span class="stat-label">Students Helped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="50">0</span><span>+</span>
+          <span class="stat-label">Partner Companies</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-card card-1">
+        <div class="fc-icon">🚀</div>
+        <div class="fc-text">Project Delivered!</div>
+        <div class="fc-sub">AI-Powered Chatbot</div>
+      </div>
+      <div class="floating-card card-2">
+        <div class="fc-icon">✅</div>
+        <div class="fc-text">Plagiarism: 3%</div>
+        <div class="fc-sub">Turnitin Checked</div>
+      </div>
+      <div class="floating-card card-3">
+        <div class="fc-icon">💼</div>
+        <div class="fc-text">Internship Secured</div>
+        <div class="fc-sub">₹15,000/month</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What We Offer</span>
+        <h2 class="section-title">Everything a Student Needs,<br/><span class="gradient-text">Under One Roof</span></h2>
+        <p class="section-sub">From ideation to deployment — TECHPRIX handles every technical need of your college journey.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-service="project">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="3" width="22" height="22" rx="4" stroke="currentColor" stroke-width="2"/><path d="M9 14h10M9 10h6M9 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3>Project Development</h3>
+          <p>Custom-built academic and final-year projects with full documentation, source code, and guidance — tailored to your syllabus and requirements.</p>
+          <div class="service-tags">
+            <span>Web Apps</span><span>AI/ML</span><span>IoT</span><span>Mobile</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Project Development">Request Project →</a>
+        </div>
+
+        <div class="service-card featured" data-service="guidance">
+          <div class="featured-badge">Most Popular</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" stroke="currentColor" stroke-width="2"/><path d="M5 24c0-4.418 4.03-8 9-8s9 3.582 9 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 6l2 2-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3>Project Guidance</h3>
+          <p>One-on-one mentorship from industry experts. We guide you through architecture, implementation, and presentation of your projects.</p>
+          <div class="service-tags">
+            <span>Mentorship</span><span>Review</span><span>Debugging</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Project Guidance">Get Guidance →</a>
+        </div>
+
+        <div class="service-card" data-service="internship">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="8" width="20" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M10 8V6a4 4 0 018 0v2" stroke="currentColor" stroke-width="2"/><path d="M14 14v4M12 16h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3>Internship Offers</h3>
+          <p>Verified internship opportunities at top tech companies. We match you with roles based on your skills, domain, and salary expectations.</p>
+          <div class="service-tags">
+            <span>Tech Startups</span><span>MNCs</span><span>Remote</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Internship Offer">Find Internship →</a>
+        </div>
+
+        <div class="service-card" data-service="salary">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v20M9 8h7.5a2.5 2.5 0 010 5H11a2.5 2.5 0 000 5H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3>Salary Guidance</h3>
+          <p>Know which companies pay the best for your role. We provide research-backed salary insights and negotiation tips to maximize your earnings.</p>
+          <div class="service-tags">
+            <span>Market Data</span><span>Negotiation</span><span>Growth</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Salary Guidance">Get Insights →</a>
+        </div>
+
+        <div class="service-card" data-service="turnitin">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 14a8 8 0 1016 0A8 8 0 006 14z" stroke="currentColor" stroke-width="2"/><path d="M11 14l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <h3>Turnitin Plagiarism Check</h3>
+          <p>Official Turnitin similarity reports for your thesis, reports, and research papers. Get detailed analysis and content improvement suggestions.</p>
+          <div class="service-tags">
+            <span>Thesis</span><span>Reports</span><span>Research</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Turnitin Check">Check Now →</a>
+        </div>
+
+        <div class="service-card" data-service="portfolio">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M3 11h22" stroke="currentColor" stroke-width="2"/><circle cx="7" cy="8.5" r="1" fill="currentColor"/><circle cx="11" cy="8.5" r="1" fill="currentColor"/></svg>
+            </div>
+          </div>
+          <h3>Portfolio Website + Domain</h3>
+          <p>Professional portfolio websites built and deployed with a custom domain name. Stand out to recruiters with a world-class personal brand online.</p>
+          <div class="service-tags">
+            <span>Design</span><span>Hosting</span><span>Domain</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Portfolio Website">Build Portfolio →</a>
+        </div>
+
+        <div class="service-card" data-service="app">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="8" y="2" width="12" height="24" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="22" r="1.5" fill="currentColor"/><path d="M11 6h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <h3>App Development</h3>
+          <p>Native and cross-platform mobile applications built for Android and iOS. We design, develop, and deploy your app idea from scratch.</p>
+          <div class="service-tags">
+            <span>Android</span><span>iOS</span><span>Flutter</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="App Development">Build My App →</a>
+        </div>
+
+        <div class="service-card" data-service="website">
+          <div class="service-icon-wrap">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="11" stroke="currentColor" stroke-width="2"/><path d="M14 3c-3 4-3 14 0 22M3 14h22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M5 8c2 2 6 3 9 3s7-1 9-3M5 20c2-2 6-3 9-3s7 1 9 3" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+          </div>
+          <h3>Website Development</h3>
+          <p>Full-stack websites for any purpose — business landing pages, e-commerce, dashboards, or custom web tools built with modern tech stacks.</p>
+          <div class="service-tags">
+            <span>React</span><span>Node.js</span><span>Full-Stack</span>
+          </div>
+          <a href="#contact" class="service-link" data-type="Website Development">Build Website →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SHOWCASE ========== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Our Work</span>
+        <h2 class="section-title">Projects We've<br/><span class="gradient-text">Built & Delivered</span></h2>
+        <p class="section-sub">A glimpse into the innovative, cutting-edge projects our team has delivered for students across India.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <div class="projects-cta">
+        <p>Have a project idea in mind?</p>
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Transparent Pricing</span>
+        <h2 class="section-title">Simple, Student-Friendly<br/><span class="gradient-text">Pricing Plans</span></h2>
+        <p class="section-sub">No hidden charges. Pay only for what you need. Every service is delivered with quality and on time.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon">📋</div>
+            <h3>Project Development</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">2,000</span>
+              <span class="period">starting</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Full source code delivered</li>
+            <li>✓ Project documentation</li>
+            <li>✓ Presentation support</li>
+            <li>✓ 1 revision included</li>
+            <li>✓ Viva preparation help</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-type="Project Development">Get Quote</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-header">
+            <div class="pricing-icon">🛡️</div>
+            <h3>Turnitin Check</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">1,500</span>
+              <span class="period">per report</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Official Turnitin report</li>
+            <li>✓ Full similarity analysis</li>
+            <li>✓ Section-by-section breakdown</li>
+            <li>✓ PDF report delivered</li>
+            <li>✓ Price varies by content size</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-type="Turnitin Check">Check Now</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon">🌐</div>
+            <h3>Portfolio + Domain</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">2,500</span>
+              <span class="period">starting</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Custom portfolio design</li>
+            <li>✓ Domain name included</li>
+            <li>✓ Hosting setup</li>
+            <li>✓ Mobile responsive</li>
+            <li>✓ SEO optimized</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-type="Portfolio Website">Get Quote</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon">📱</div>
+            <h3>App Development</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">2,000</span>
+              <span class="period">starting</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Android / iOS app</li>
+            <li>✓ Full source code</li>
+            <li>✓ UI/UX design included</li>
+            <li>✓ Play Store guidance</li>
+            <li>✓ 1 free bug-fix round</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-type="App Development">Get Quote</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon">💼</div>
+            <h3>Internship Program</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">1,000</span>
+              <span class="period">/ month</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Verified company placements</li>
+            <li>✓ Offer letter provided</li>
+            <li>✓ Certificate on completion</li>
+            <li>✓ Remote/onsite options</li>
+            <li>✓ Stipend guidance</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-type="Internship Offer">Apply Now</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-icon">🌍</div>
+            <h3>Website Development</h3>
+            <div class="pricing-amount">
+              <span class="currency">₹</span>
+              <span class="amount">3,000</span>
+              <span class="period">starting</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li>✓ Full-stack website</li>
+            <li>✓ Custom design</li>
+            <li>✓ Database integration</li>
+            <li>✓ Admin panel option</li>
+            <li>✓ Deployment support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-type="Website Development">Get Quote</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INTERNSHIP SECTION ========== -->
+  <section class="internships" id="internships">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Career Launchpad</span>
+        <h2 class="section-title">Land Your Dream Internship<br/><span class="gradient-text">With Our Guidance</span></h2>
+        <p class="section-sub">We guide you to the highest-paying, most impactful internship opportunities in the tech industry.</p>
+      </div>
+      <div class="intern-cards">
+        <div class="intern-card">
+          <div class="intern-icon">🔍</div>
+          <h4>Company Research</h4>
+          <p>We identify and vet companies offering the best stipends, learning opportunities, and career growth paths.</p>
+        </div>
+        <div class="intern-card">
+          <div class="intern-icon">📝</div>
+          <h4>Resume Building</h4>
+          <p>ATS-optimized, recruiter-approved resumes tailored to your tech profile and the role you're targeting.</p>
+        </div>
+        <div class="intern-card">
+          <div class="intern-icon">🎯</div>
+          <h4>Interview Prep</h4>
+          <p>Mock interviews, DSA practice, and role-specific preparation to make sure you walk in with confidence.</p>
+        </div>
+        <div class="intern-card">
+          <div class="intern-icon">💰</div>
+          <h4>Salary Navigation</h4>
+          <p>Know what to expect and how to negotiate. We share market data so you never undersell yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / REQUEST FORM ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Ready to Start?<br/><span class="gradient-text">Let's Talk.</span></h2>
+          <p>Fill in your details and we'll get back to you within 24 hours with a custom quote and roadmap for your project or service.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email Us</strong>
+                <span>techprix.site@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏱️</span>
+              <div>
+                <strong>Response Time</strong>
+                <span>Within 24 hours</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🇮🇳</span>
+              <div>
+                <strong>Serving</strong>
+                <span>All Indian Colleges & Universities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="college">College / University</label>
+              <input type="text" id="college" name="college" placeholder="Your college name" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service Required *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="Project Development">Project Development</option>
+                <option value="Project Guidance">Project Guidance</option>
+                <option value="Internship Offer">Internship Placement</option>
+                <option value="Salary Guidance">Salary / Career Guidance</option>
+                <option value="Turnitin Check">Turnitin Plagiarism Check</option>
+                <option value="Portfolio Website">Portfolio Website + Domain</option>
+                <option value="App Development">App Development</option>
+                <option value="Website Development">Website Development</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Select budget...</option>
+                <option value="₹1,000 - ₹2,000">₹1,000 - ₹2,000</option>
+                <option value="₹2,000 - ₹5,000">₹2,000 - ₹5,000</option>
+                <option value="₹5,000 - ₹10,000">₹5,000 - ₹10,000</option>
+                <option value="₹10,000+">₹10,000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="requirements">Your Requirements *</label>
+              <textarea id="requirements" name="requirements" rows="5" placeholder="Describe your project or requirements in detail. Include topic, domain, deadline, tech stack preferences, etc." required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="deadline">Expected Deadline</label>
+              <input type="date" id="deadline" name="deadline" />
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText">Send My Requirements</span>
+              <span id="btnLoader" class="hidden">Sending...</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l10-5-3 5 3 5-10-5z" fill="currentColor"/></svg>
+            </button>
+            <div id="formMsg" class="form-message hidden"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap" style="margin-bottom:1rem">
+            <img src="assets/logo-icon.png" alt="TECHPRIX Icon" class="footer-logo-icon" />
+            <img src="assets/logo-name.png" alt="TECHPRIX" class="footer-logo-name" />
+          </div>
+          <p>Your all-in-one tech partner for college students. Projects, internships, placements, and more.</p>
+          <div class="footer-socials">
+            <a href="mailto:techprix.site@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Project Development</a></li>
+            <li><a href="#services">Project Guidance</a></li>
+            <li><a href="#internships">Internship Offers</a></li>
+            <li><a href="#services">Turnitin Check</a></li>
+            <li><a href="#services">Portfolio Website</a></li>
+            <li><a href="#services">App Development</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#projects">Our Projects</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="mailto:techprix.site@gmail.com">techprix.site@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TECHPRIX. All rights reserved. Designed for students, by tech experts.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+  <div class="wa-float" id="waFloat">
+    <div class="wa-offer-badge">20% OFF</div>
+    <div class="wa-tooltip">Chat with us on WhatsApp! 🎉</div>
+    <a href="https://wa.me/919876543210?text=Hi%20TECHPRIX!%20I%20saw%20your%2020%25%20offer%20and%20I%27m%20interested%20in%20your%20services." 
+       target="_blank" rel="noopener" class="wa-btn" aria-label="Chat on WhatsApp">
+      <img src="assets/whatsapp.png" alt="WhatsApp" class="wa-icon" />
+    </a>
+    <div class="wa-ripple"></div>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
